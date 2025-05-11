@@ -6,6 +6,8 @@ def es_palindromo():
         print("Es palindromo")
     else:
         print("No es palidromo")
+
+#def texto_al_rebves():
         
 def no_space(pala):
     nuevo_text = ""
