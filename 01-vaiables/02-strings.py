@@ -7,4 +7,4 @@ name= "vetdy03"
 #print(name[0:3])
 print(name[5:])
 print(name[:4])
-print(name[:])
+print(name[::-1])
