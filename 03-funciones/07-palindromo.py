@@ -2,20 +2,29 @@ def es_palindromo():
     palabra = input("Ingrese palabra:")
     palabra = no_space(palabra)
     print(palabra)
-    if palabra == (palabra[::-1]):
+    palabraNueva = palabraAlReves(palabra)
+    
+    print(palabra) 
+
+    if palabra == palabraNueva:#(palabra[::-1]):
         print("Es palindromo")
     else:
         print("No es palidromo")
 
 #def texto_al_rebves():
-        
-def no_space(pala):
+def palabraAlReves(palReves):
+    nueva_palarbra =""
+    for char in palReves:
+        nueva_palarbra = char + nueva_palarbra
+    return nueva_palarbra
+             
+def no_space(palabra):
     nuevo_text = ""
-    for char in pala:
-        if char != " ":
-            nuevo_text += char
+    for chars in palabra:
+        if chars != " ":
+            nuevo_text += chars
     
-    return nuevo_text
+    return nuevo_text.lower()
             
     
 if __name__ == "__main__":
