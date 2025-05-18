@@ -1,0 +1,14 @@
+macotas = ["migui", "negro", "josh", "kaori", "peque", "danita"]
+# print(macotas)
+# #print(macotas[0])
+# macotas[0] = "mia" #method replace
+# print(macotas)
+# #print(macotas[0:3]) #hasta la antes de la 3
+# #print("ejecutando: [2:]")
+# #print(macotas[2:])
+# #print(macotas[-7:])
+# print(macotas[1:4:2])#salta de 2 en 2
+
+num = list(range(21))
+print(num[1::2]) #[1(donde iniciar la pos): 3(hasta donde quiero llegar): 2(de cundo en cuanto quiero hacer mis saltos)]
+print(num[::2])
