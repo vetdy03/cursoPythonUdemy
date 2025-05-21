@@ -27,7 +27,7 @@ def eliminarMenosDe10(listaDeComprass):
 
 print(eliminarMenosDe10(listaDeCompras))
 
-
+#lumnos con baja nota de 51#
 
 
 #listaDeCompras = list(map(lambda listaNueva: listaNueva[0]  ))
