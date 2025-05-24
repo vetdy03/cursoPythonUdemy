@@ -52,8 +52,23 @@ def aplicarDescuentoMenos50(listaDeComprass):
             contadorDescuento += 1
     return listaDeComprass, contadorDescuento
 listaDeDescuentos, contadorDescuentoUltimo = aplicarDescuentoMenos50(listaDeCompras)
-print("\nDescuento para precios mayores a 100->30%, 100-50->15%, total de = {} productos \n{}".format(contadorDescuentoUltimo, listaDeDescuentos))
+print("\nDescuento para precios mayores a 100->30%, 100-50->15%, total de = {} productos \n{}\n".format(contadorDescuentoUltimo, listaDeDescuentos))
 ##print(aplicarDescuentoMenos50(listaDeCompras))
+
+#CREAR TICKET DE COMPRA 
+def ticketDeCompra(listaDeComprass):
+    for producto in listaDeComprass:
+        print("______________****_____________")        
+        valor= "|Nombre del producto: " + str(producto[0]).upper() +"\nPrecio Original:  "+ str(producto[1])
+        #print(valor)
+        if producto[1] > 100:
+            valor = valor +"\nPrecio con descuento: {} Bs".format(producto[1] - producto[1]*0.30)
+        elif 100> producto[1] >= 50:
+            valor = valor +"\nPrecio con descuento: {} Bs".format(producto[1] - producto[1]*0.15)
+        else:
+            valor = valor +"\nNo aplica descuento"      
+        print("\n"+valor+"\n|_____________________________|")
+print(ticketDeCompra(listaDeCompras))
 
 #ELIMINAR PRODUCTOS QUE VALEN MENOS DE 25
 def eliminarMenosDe10(listaDeComprass):
