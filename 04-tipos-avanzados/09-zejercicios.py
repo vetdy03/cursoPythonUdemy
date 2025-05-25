@@ -7,8 +7,8 @@ listaDeCompras = [["cebolla",10], #1#
                   ["papa",200],
                   ["arroz",480],
                   ["azucar",350],
-                  ["aceite",22],
-                  ["naranja",22] #9
+                  ["aceite",7],
+                  ["naranja",12] #9
                   ]
 #Sumar los precios de todos los productos (con o sin descuentos). CON REDUCE
 def sumaConReduce(listaDeComprass):
@@ -69,6 +69,17 @@ def ticketDeCompra(listaDeComprass):
             valor = valor +"\nNo aplica descuento"      
         print("\n"+valor+"\n|_____________________________|")
 print(ticketDeCompra(listaDeCompras))
+
+def aumentarPrecioMenorA15(listaDeComprass, porcentaje):
+    for producto in listaDeComprass:
+        if producto[1] < 15:
+            producto[1] = producto[1] + int(producto[1] * (porcentaje / 100))
+    return listaDeComprass
+
+# Ejemplo de uso: aumentar un 20% a los productos con precio menor a 15
+print("\nAumentando 20% a productos con precio menor a 15:")
+print(aumentarPrecioMenorA15(listaDeCompras, 20))
+
 
 #ELIMINAR PRODUCTOS QUE VALEN MENOS DE 25
 def eliminarMenosDe10(listaDeComprass):

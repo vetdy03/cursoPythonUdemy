@@ -17,3 +17,4 @@ print(primer ^ segundo)# diferencia simetrica.- elimina lo que se enceuntra dupl
 
 if 5 in segundo:
     print("si hay xd")
+    
