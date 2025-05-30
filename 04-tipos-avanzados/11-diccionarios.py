@@ -1,7 +1,7 @@
 punto = {"x": 25, "y": 50, "z": 75} # string si o si despues lo que sea y numero en ese orden
 print(punto)
 print(punto["x"]) #no se puede acceder por posicion sino por el string asociado
-punto["w"] = 45
+punto["w"] = 45#agregar a un diccionario
 #print(punto)
 #print(punto, punto["w"])
 if "lala" in punto:
