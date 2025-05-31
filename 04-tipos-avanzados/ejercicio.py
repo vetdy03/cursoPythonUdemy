@@ -19,3 +19,6 @@ for charr in cadenita2:
 sumaDeCaracteres = sum(dic.values())
 print("Suma de caracteres:", sumaDeCaracteres)
 print(dic)
+## 5 2 3 8 1 9
+
+
