@@ -31,3 +31,5 @@ print(mi_dic_new)
 ordenado_dec = sorted(dic.items(), reverse=True) #DEVUELVE UNA LISTA SOLO INVERTIDA
 #print(type(ordenado_dec)) #LISTA ES IGUA 
 print("\n es esto: ",format(ordenado_dec))
+
+#juntar las soluciones anteriores para encontrar los caracteres que mas se repiten de un string
