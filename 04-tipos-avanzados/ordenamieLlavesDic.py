@@ -34,4 +34,7 @@ print("\n es esto: ",format(ordenado_dec))
 
 #de un listado de tuplas, devolver las tuplas que tengan el mayor valor
 
+
+#los caracteres que mas se repiten son:
+
 #juntar las soluciones anteriores para encontrar los caracteres que mas se repiten de un string
