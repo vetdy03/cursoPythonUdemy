@@ -28,8 +28,13 @@ mi_dic_new = OrderedDict(sorted(dic.items()))
 print(mi_dic_new)
 
 #ORDEN INVERSO LEXICOGRAFICAMENTE
-ordenado_dec = sorted(dic.items(), reverse=True) #DEVUELVE UNA LISTA SOLO INVERTIDA
+ordenado_dec = sorted(dic.items(), reverse=True) #DEVUELVE UNA LISTA SOLO INVERTIDA de tuplas
 #print(type(ordenado_dec)) #LISTA ES IGUA 
 print("\n es esto: ",format(ordenado_dec))
+
+#de un listado de tuplas, devolver las tuplas que tengan el mayor valor
+
+
+#los caracteres que mas se repiten son:
 
 #juntar las soluciones anteriores para encontrar los caracteres que mas se repiten de un string
