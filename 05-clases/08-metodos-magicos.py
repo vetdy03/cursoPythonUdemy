@@ -5,6 +5,7 @@ class Perro: #PascalCase or UpperCamelCase
 
     def __del__(self):
         print(F"chao {self.name}")
+        
     def __str__(self): #entregar info mas relevante
         return f"Clase Perro: {self.name}"
     
