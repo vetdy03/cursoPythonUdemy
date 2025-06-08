@@ -35,21 +35,23 @@ for llave, cant in dic.items():
         print("La letra {} se repite {}".format(llave, cant))
 
 
-#{ de la linea 40 a la son los mismos sol oque uno es de forma simple y la tradicionarl}
-
+#{ de la linea 40 a la son los mismos sol oque uno es de forma simple y la tradicional}
 #-----*OTRA FORMA DE SACAR EL MAYOR EN LISTA DE TUPLAS*------#
 newTuple = list(dic.items())#convertir el diccionario en una lista de tuplas
 mayor_val = None
+masRepetidas = []
 for tuplee in newTuple:
     if mayor_val is None or tuplee[1] > mayor_val:
         mayor_val= tuplee[1]
-
-       
+        
+for tuplee in newTuple:
+    if tuplee[1] == mayor_val:
+        masRepetidas.append(tuplee)
+print("la mas repetida es:{}".format(masRepetidas))
 #DE UN LISTADO DE TUPLAS, DEVOLVER LAS TUPLAS QUE TENGAN EL MAYOR VALOR. Obtener el valor máximo de repeticiones
-max_repeticiones = max(dic.values())   
-mayores = [(letra, cantidad) for letra, cantidad in dic.items() if cantidad == max_repeticiones] #Obtener todas las tuplas (letra, cantidad) que tengan ese valor máximo
-print(type(mayores))
-print("Las letras que más se repiten son:")
-for letra, cantidad in mayores:
-    print(f"'{letra}' se repite {cantidad} veces.")
-    
+
+maxRepeticiones = max(dic.values())
+maximosDecimoPrimero = [(letra, cantidad) for letra, cantidad in dic.items() if cantidad == maxRepeticiones]
+print("las letras que mas se repiten son: ")
+for letra, cantidad in maximosDecimoPrimero:
+    print("{} se repite {}".format(letra, cantidad))
