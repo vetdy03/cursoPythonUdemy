@@ -3,6 +3,8 @@ class Perro: #PascalCase or UpperCamelCase
         self.name = nombre #PROPIEDAD.- var asociada a una clase
         self.age = edad
 
+    def __del__(self):
+        print(F"chao {self.name}")
     def __str__(self): #entregar info mas relevante
         return f"Clase Perro: {self.name}"
     
@@ -10,7 +12,4 @@ class Perro: #PascalCase or UpperCamelCase
         print(f"{self.name} dice; guauu") #Factory Method
     
 perro = Perro("chanchito", 7)
-texto = str(perro) 
-print(perro)   
-print(type(perro))   
-print(type(texto))
+del perro
