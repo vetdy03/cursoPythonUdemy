@@ -8,7 +8,7 @@ for charr in cadenita:
 print("Devolviendo la nueva {}".format(nuevaCadena))
 
 #Contar en un diccionario cuantos se repiten 
-cadenita2 = list(nuevaCadena.lower())#lagunala
+cadenita2 = list(nuevaCadena.lower())#lagunala #["l", "a", "g", "u", "n", "a", "l", "a",]
 #cadenita2 = list(cadenita.lower())#lagunala
 dic = {}
 for charr in cadenita2:
@@ -17,11 +17,11 @@ for charr in cadenita2:
     elif charr in dic:
         dic[charr] += 1
 
+#EXTRA SUMA DE CARACTERES
 sumaDeCaracteres = sum(dic.values())
-print("Suma de caracteres:", sumaDeCaracteres)
+print("Suma de caracteres: {}".format(sumaDeCaracteres))
 print(dic)
 ## SALIDA: {'d': 3, 'i': 8, 'c': 6, 'o': 7, 'n': 6, 'a': 10, 'r': 5, 'e': 3, 'u': 3, 'q': 1, 'm': 2, 'b': 1, 's': 1, 'p': 2, 'l': 1}
-
 
 #verificar cuáles valores son mayores a 4
 #letra toma el valor de la clave (en tu caso, cada carácter de la cadena).
@@ -33,3 +33,23 @@ for letra, cantidad in dic.items():#devuelve una lista de tuplas, donde cada tup
 for llave, cant in dic.items():
     if cant >= 4:
         print("La letra {} se repite {}".format(llave, cant))
+
+
+#{ de la linea 40 a la son los mismos sol oque uno es de forma simple y la tradicionarl}
+
+#-----*OTRA FORMA DE SACAR EL MAYOR EN LISTA DE TUPLAS*------#
+newTuple = list(dic.items())#convertir el diccionario en una lista de tuplas
+mayor_val = None
+for tuplee in newTuple:
+    if mayor_val is None or tuplee[1] > mayor_val:
+        mayor_val= tuplee[1]
+
+       
+#DE UN LISTADO DE TUPLAS, DEVOLVER LAS TUPLAS QUE TENGAN EL MAYOR VALOR. Obtener el valor máximo de repeticiones
+max_repeticiones = max(dic.values())   
+mayores = [(letra, cantidad) for letra, cantidad in dic.items() if cantidad == max_repeticiones] #Obtener todas las tuplas (letra, cantidad) que tengan ese valor máximo
+print(type(mayores))
+print("Las letras que más se repiten son:")
+for letra, cantidad in mayores:
+    print(f"'{letra}' se repite {cantidad} veces.")
+    
