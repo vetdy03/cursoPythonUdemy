@@ -54,4 +54,5 @@ maxRepeticiones = max(dic.values())
 maximosDecimoPrimero = [(letra, cantidad) for letra, cantidad in dic.items() if cantidad == maxRepeticiones]
 print("las letras que mas se repiten son: ")
 for letra, cantidad in maximosDecimoPrimero:
-    print("{} se repite {}".format(letra, cantidad))
+    print("{} se repite {}".format( letra.upper(), cantidad))
+    
