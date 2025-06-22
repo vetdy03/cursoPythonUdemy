@@ -14,8 +14,8 @@ class Sesion(Model): #identica al user que se esta conectando y ---
     def guardar(self):
         print("Guardando en acrchivo")
         
-def guardar(entidad):
-    entidad.guardar()
+def guardar(entidades):
+    for entidad in entidades:
+        entidad.guardar()
     
-usuario = Usuario()
-guardar(usuario)
+guardar([Usuario(), Sesion()])
