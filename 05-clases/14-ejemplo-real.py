@@ -10,9 +10,10 @@ class Model():
         
     def guardar(self):
         print(f"Guardando {self.tabla} en la BBDD")
+        
     @classmethod    
     def buscar_por_id(self, _id):
-        print("Bsucando por id: {}".format(_id))
+        print("Bsucando por id: {} en la tabla de user {}".format(_id, self.tabla))
         
 class User(Model):
     tabla = "Usuario"
