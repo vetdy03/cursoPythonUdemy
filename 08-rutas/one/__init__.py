@@ -1,2 +1,2 @@
-def init():
-    print("Soy modulo uno"  )
+def init(graql, **_):
+    print(f"Soy modulo uno: {graql}"  )
