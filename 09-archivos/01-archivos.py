@@ -8,7 +8,7 @@ a = 1
 archivo = Path("09-archivos/archivo-prueba10.txt") # Crea un objeto Path para el archivo
 #archivo.write_text("Hola, este es un archivo de prueba by: Vetdy03.")  # Crea o escribe en el archivo
 
-#archivo.stats() # Imprime información del archivo
+archivo.stats() # Imprime información del archivo
 #contenido = archivo.read_text()  # Lee el contenido del archivo
 #print(contenido)  # Imprime el contenido del archivodirectorio
 print(archivo.exists())  # Verifica si el archivo existe
