@@ -26,9 +26,9 @@ archivo = Path("09-archivos/archivo-prueba10.txt") # Crea un objeto Path para el
 # print(archivo.suffix)  # Imprime la extensión del archivo
 #print(archivo.stem)  # Imprime el nombre del archivo sin la extensión
 # directorio
-# print(archivo.resolve())  # Imprime la ruta absoluta del archivo
-# print(archivo.is_absolute())  # Verifica si la ruta es absoluta
-# print(archivo.relative_to(Path.cwd()))  # Imprime la ruta relativa al directorio actual
+print(archivo.resolve())  # Imprime la ruta absoluta del archivo
+print(archivo.is_absolute())  # Verifica si la ruta es absoluta
+#print(archivo.relative_to(Path.cwd()))  # Imprime la ruta relativa al directorio actual
 
 #IMPRIMICIONES
 print("Acceso:", ctime(archivo.stat().st_atime)) # Tiempo de último acceso
