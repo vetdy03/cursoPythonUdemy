@@ -8,7 +8,7 @@ a = 1
 archivo = Path("09-archivos/archivo-prueba10.txt") # Crea un objeto Path para el archivo
 #archivo.write_text("Hola, este es un archivo de prueba by: Vetdy03.")  # Crea o escribe en el archivo
 
-archivo.stats() # Imprime información del archivo
+#print(archivo.stats()) # Imprime información del archivo
 #contenido = archivo.read_text()  # Lee el contenido del archivo
 #print(contenido)  # Imprime el contenido del archivodirectorio
 print(archivo.exists())  # Verifica si el archivo existe
@@ -16,7 +16,7 @@ print(archivo.exists())  # Verifica si el archivo existe
 # print(archivo.stat())  # Obtiene información del archivo
 #archivo.rename("nuevo_archivo1002.txt")  # Renombra el archivo cambiando la ruta
 #archivo.with_suffix(".md")  # Cambia la extensión del archivo
-archivo.rename(archivo.with_suffix(".md"))
+archivo.rename(archivo.with_suffix(".txt"))  # Renombra el archivo manteniendo la ruta
 #archivo.with_name("nuevo_archivo101.txt")  # Cambia el nombre del archivo manteniendo la ruta
 #print(nuevo_nombre)
 # archivo.unlink()  # Elimina el archivo
