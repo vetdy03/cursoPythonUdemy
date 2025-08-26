@@ -1,0 +1,8 @@
+# Instalar pipx
+sudo apt install pipx
+
+# Configurar el PATH
+pipx ensurepath
+
+# Instalar pipenv
+pipx install pipenv 
