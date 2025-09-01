@@ -1,9 +1,13 @@
 from pathlib import Path
 
 #Path(r"C:\Users\vetdy03\Documents\cursos\cursoPythonUdemy\08-rutas\01-path.py")
-path = Path("hola-mundo/mi-archivo.py")
+#Path(r"\home\vetdy03\Documents\cursos\cursoPythonUdemy\08-rutas\del.py")
+path = Path("/home/vetdy03/Documents/cursos/cursoPythonUdemy/08-rutas/one/")
+patito = Path("del.py")
 path.is_file()
-path.is_dir()
+print(patito.is_file())
+
+print(patito.is_dir())
 path.exists()
 
 print(
