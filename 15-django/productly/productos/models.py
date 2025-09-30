@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 class Categoria(models.Model):
-    nombre = models.CharField(nax_length=100) #longuitud maxima 100 que debe guardar
+    nombre = models.CharField(max_length=100) #longuitud maxima 100 que debe guardar
 
 class Producto(models.Model):
     nombre = models.CharField(max_length=100)
@@ -13,4 +13,6 @@ class Producto(models.Model):
     # RESTRICT: SOLO ELIMINA SI NO EXISTEN PRODUCTOS
     # SET_NULL: ACTUALIZA EL VALOR
     # SET_DEFAULT: ASIGAN VAL POR DEFECTO
-    categoria = models.ForeignKey(Categoria, on_delete=)
+    categoria = models.ForeignKey(
+        Categoria, on_delete=models.CASCADE
+    )
