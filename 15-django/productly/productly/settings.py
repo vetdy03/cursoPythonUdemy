@@ -15,7 +15,7 @@ from pathlib import Path
 from django.forms.renderers import TemplatesSetting
 
 class CustomFormRenderer(TemplatesSetting):
-    form_templates_name = 'form_snippets.html'
+    form_template_name = 'form_snippet.html'
 
 FORM_RENDERER = "productly.settings.CustomFormRenderer"
 
