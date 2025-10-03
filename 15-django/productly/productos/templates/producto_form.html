@@ -1,6 +1,7 @@
 {%extends 'base.html'%}
 {%block content%}
 <form 
+    novalidate
     action="{% url 'productos:formulario' %}"
     method='post'>
     {% csrf_token %}
