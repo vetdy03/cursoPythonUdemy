@@ -1,0 +1,34 @@
+
+como install: conda install numpy pandas matplotlib
+--------------***como 
+# Listar todos los entornos
+conda env list
+
+# Crear nuevo entorno
+conda create -n mi_proyecto python=3.9
+
+# Activar entorno
+conda activate mi_proyecto
+
+# Desactivar entorno actual
+conda deactivate
+
+# Eliminar entorno
+conda env remove -n mi_proyecto
+
+# Instalar un paquete en el entorno actual
+conda install numpy pandas matplotlib
+
+# Instalar versión específica
+conda install tensorflow=2.13
+
+# Instalar desde pip (si no está en conda)
+pip install requests
+------------------*****como instalar miniconda*****--------------
+sudo apt update && sudo apt upgrade -y
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+chmod +x Miniconda3-latest-Linux-x86_64.sh
+./Miniconda3-latest-Linux-x86_64.sh
+source ~/.bashrc
+conda --version
+
