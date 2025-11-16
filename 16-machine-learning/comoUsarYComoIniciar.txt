@@ -32,3 +32,5 @@ chmod +x Miniconda3-latest-Linux-x86_64.sh
 source ~/.bashrc
 conda --version
 
+ENCENDER EL JUPYER
+jupyter notebook
