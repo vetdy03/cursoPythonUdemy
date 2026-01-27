@@ -1,4 +1,4 @@
-animal = " chanchito feliz "
+animal = " chanchito fEliz Is back my friends "
 print(animal.upper())
 print(animal.lower())
 print(animal.strip().capitalize())
@@ -7,6 +7,6 @@ print(animal.strip())
 print(animal.lstrip())
 print(animal.rstrip())
 print(animal.find("ito"))
-print(animal.replace("ito", "ITO"))
+print(animal.replace("ito", "ITO").replace("friends", "brother"))
 print("itoo" in animal)
 print("ito" not in animal)
