@@ -1,0 +1,1 @@
+como instalar sqlite3 desde al fuente oficial
